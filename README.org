@@ -9,7 +9,7 @@ configuration.  It also provides access to configuration sections via [[https://
 
 * Org-Mode
 
-This can be used with [[https://orgmode.org/][org-mode]] to do syntax highlighting.
+This can be used with [[https://orgmode.org/][org-mode]] to perform syntax highlighting.
 
 #+begin_example
 #+BEGIN_SRC eos
