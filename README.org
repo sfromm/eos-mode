@@ -1,5 +1,30 @@
-#+TITLE: EOS Mode for EMACS
+#+TITLE: Emacs Mode for EOS Configuration Files
+
+This is an Emacs package to view and edit Arista EOS (tm) configuration files.
 
 * EOS-Mode
 
-More information to come.
+This provides font-lock highlighting for different keywords, commands, and sections in EOS
+configuration.  It also provides access to configuration sections via [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html#Imenu][Imenu]].
+
+* Org-Mode
+
+This can be used with [[https://orgmode.org/][org-mode]] to do syntax highlighting.
+
+#+begin_example
+#+BEGIN_SRC eos
+router isis NetworkUnderlay
+   net 49.0001.0000.0000.0010.00
+   is-hostname mynet-pe-01
+   is-type level-2
+   log-adjacency-changes
+   advertise passive-only
+   !
+   address-family ipv4 unicast
+   !
+   segment-routing mpls
+      router-id 10.1.10.1
+      no shutdown
+!
+#+END_SRC
+#+end_example
