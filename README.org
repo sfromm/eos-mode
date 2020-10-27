@@ -7,6 +7,8 @@ This is an Emacs package to view and edit Arista EOS (tm) configuration files.
 This provides font-lock highlighting for different keywords, commands, and sections in EOS
 configuration.  It also provides access to configuration sections via [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html#Imenu][Imenu]].
 
+The official repository is located at: https://github.com/sfromm/eos-mode.
+
 * Installation
 
 You can either clone this repository and add it your ~load-path~ or use something like /Quelpa/ or
