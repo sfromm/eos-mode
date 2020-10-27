@@ -53,7 +53,8 @@
    (regexp-opt
     '("controller" "hardware tcam" "interface" "ip routing vrf"
       "ip access-list" "ip prefix-list" "ipv6 prefix-list"
-      "line" "management api" "policy-map" "redundancy" "route-map" "router") t)))
+      "line" "management api" "policy-map" "redundancy" "route-map" "router") 'words))
+  "Regular expressions for EOS sections.")
 
 (defconst eos-keywords-regex
   (regexp-opt
@@ -64,8 +65,8 @@
   (concat
    "^ *"
    (regexp-opt
-    '("ip community-list" "ip radius" "ip routing" "ip route"
-      "ntp server" "radius-server" "snmp-server") t))
+    '("ip community-list" "ip name-server" "ip radius" "ip routing" "ip route"
+      "ntp server" "radius-server" "snmp-server") 'words))
   "Regular expressions for EOS commands.")
 
 (defconst eos-ipaddr-regex
