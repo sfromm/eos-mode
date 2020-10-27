@@ -1,7 +1,13 @@
 ;;; eos-mode.el --- edit Arista EOS configuration files -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020 Stephen Fromm <sfromm at gmail.com>
-;;
+;; Copyright (C) 2020 Stephen Fromm
+
+;; Author: Stephen Fromm
+;; URL: https://github.com/sfromm/eos-mode
+;; Package-Requires: ((emacs "24.1"))
+;; Keywords: arista eos
+;; Version: 0.3
+
 ;; This program is not part of GNU Emacs
 ;;
 ;; This file is free software; you can redistribute it and/or modify
