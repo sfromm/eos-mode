@@ -51,7 +51,7 @@
   (concat
    "^ *"
    (regexp-opt
-    '("controller" "hardware tcam" "interface" "ip routing vrf"
+    '("controller" "control-functions" "hardware tcam" "interface" "ip routing vrf"
       "ip access-list" "ip prefix-list" "ipv6 prefix-list"
       "line" "management api" "policy-map" "redundancy" "route-map" "router") 'words))
   "Regular expressions for EOS sections.")
