@@ -106,6 +106,7 @@
 (defvar eos-imenu-expression
   '(
     ("Vlans"                "^vlan *\\(.*\\)" 1)
+    ("Access-lists"         "ip\\(?:v6\\)? access-list *\\(.*\\)" 1)
     ("Interfaces"           "^[\t ]*interface *\\(.*\\)" 1)
     ("VRFs"                 "^ *vrf *\\(.*\\)" 1)
     ("Routing protocols"    "^router *\\(.*\\)" 1)
