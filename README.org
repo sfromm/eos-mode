@@ -14,10 +14,15 @@ The official repository is located at: https://github.com/sfromm/eos-mode.
 You can either clone this repository and add it your ~load-path~ or use something like /Quelpa/ or
 /Straight/ to add to your configuration.  The following is one example.
 
+Keying off of a line at the beginning of a file, such as ~RANCID-CONTENT-TYPE~
+is really helpful to automatically enable the mode.
+
 #+begin_src emacs-lisp
 (use-package eos-mode
   :defer t
   :quelpa (eos-mode :fetcher github :repo "sfromm/eos-mode")
+  :commands (eos-mode)
+  :magic ("!RANCID-CONTENT-TYPE: arista" . eos-mode)
   :hook (eos-mode . highlight-indent-guides-mode))
 #+end_src
 
