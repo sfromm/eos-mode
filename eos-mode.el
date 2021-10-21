@@ -45,7 +45,7 @@
 
 ;; Constants
 
-(defconst eos-mode-version "0.3" "Version of `eos-mode'.")
+(defconst eos-mode-version "0.4" "Version of `eos-mode'.")
 
 (defconst eos-section-regex
   (concat
