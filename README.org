@@ -19,8 +19,7 @@ is really helpful to automatically enable the mode.
 
 #+begin_src emacs-lisp
 (use-package eos-mode
-  :defer t
-  :quelpa (eos-mode :fetcher github :repo "sfromm/eos-mode")
+  :straight (eos-mode :type git :host github :repo "sfromm/eos-mode")
   :commands (eos-mode)
   :magic ("!RANCID-CONTENT-TYPE: arista" . eos-mode)
   :hook (eos-mode . highlight-indent-guides-mode))
